@@ -1,0 +1,29 @@
+--Create a database for a clothing thrift store 
+
+CREATE TABLE clothes (id INTEGER, type TEXT, brand TEXT, size INTEGER, price INTEGER);
+INSERT INTO clothes VALUES (1, "dress", "Chanel", 10, 500);
+INSERT INTO clothes VALUES (2, "pants", "Burberry", 6, 100);
+INSERT INTO clothes VALUES (3, "top", "LV", 8, 50);
+INSERT INTO clothes VALUES (4, "dress", "Dior", 12, 400);
+INSERT INTO clothes VALUES (5, "bras", "VS", 36, 20);
+INSERT INTO clothes VALUES (6, "jumpsuit", "anthro", 16, 50);
+INSERT INTO clothes VALUES (7, "belt", "leather", 32, 10);
+INSERT INTO clothes VALUES (8, "tights", "bloch", 2, 5);
+INSERT INTO clothes VALUES (9, "dress", "Sanro", 4, 60);
+INSERT INTO clothes VALUES (10, "pants", "Betabrand", 14, 45);
+INSERT INTO clothes VALUES (11, "sweater", "soft", 20, 30);
+INSERT INTO clothes VALUES (12, "cardigan", "express", 22, 39);
+INSERT INTO clothes VALUES (13, "coat", "columbia", 40, 220);
+INSERT INTO clothes VALUES (14, "vest", "Patagonia", 50, 300);
+INSERT INTO clothes VALUES (15, "socks", "cashmere", 9, 15);
+SELECT * FROM clothes;
+SELECT * FROM clothes ORDER BY price;
+SELECT * FROM clothes WHERE price >100 ORDER BY price;
+
+--Display the database ordered by price
+SELECT * FROM clothes
+ORDER BY price desc;
+
+--What is the average price of the items in the store?
+SELECT AVG (price) "average price"
+FROM clothing
